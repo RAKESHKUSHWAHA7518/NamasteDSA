@@ -48,4 +48,25 @@ var postorderTraversal = function(root) {
 // ans.push(s2.pop().val)
 // }
 // return ans
+
+// one stack solutions
+
+// let stack=[];
+// let ans=[]
+// let curr=root;
+// let lastVisted;
+// while(curr||stack.length){
+//     while(curr){
+//         stack.push(curr)
+//         curr= curr.left
+//     }
+//     let peekNode=stack[stack.length-1]
+//     if(peekNode.right && peekNode.right!=lastVisted){
+//         curr=peekNode.right
+//     } else {
+//         ans.push(peekNode.val)
+//         lastVisted=stack.pop()
+//     }
+// }
+// return ans
 };
